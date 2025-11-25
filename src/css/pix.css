@@ -1,0 +1,139 @@
+/* Genel Stil ve Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.gallery-column {
+    width: 500px; 
+    max-width: 90%; 
+}
+
+/* Kolon Başlıkları */
+.column-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    margin: 0 0 15px 0; 
+    padding-left: 5px; 
+}
+
+/* 2. ARAMA FORMU DÜZENİ */
+.search-form {
+    
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-bottom: 20px; 
+    padding: 0 5px; 
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px; 
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.search-form button {
+    padding: 8px 15px; 
+    background-color: #4E75FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.search-form button:hover {
+    background-color: #3a5edb;
+}
+
+/* 3. GALERİ DÜZENİ */
+.gallery {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+/* 4. FOTOĞRAF KARTI STİLİ */
+.photo-card {
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 0; 
+    overflow: hidden;
+   
+    box-shadow: none; 
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover; 
+}
+
+/* 5. BİLGİ KUTUSU VE İSTATİSTİKLER STİLİ */
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0; 
+    border-top: none; 
+}
+
+.info-item {
+    text-align: center;
+    font-size: 10px; 
+    color: #888; 
+    line-height: 1.2;
+    padding: 0 2px;
+}
+
+.info-item b {
+    display: block;
+    font-size: 10px; 
+    font-weight: normal;
+    color: #444;
+}
+
+/* 6. YÜKLE DAHA FAZLA BUTONU */
+#load-more {
+    display: block;
+    margin: 20px auto 0 auto; 
+    padding: 8px 25px; 
+    background-color: #4E75FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 7. Yükleniyor Mesajı */
+.loading-text {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
